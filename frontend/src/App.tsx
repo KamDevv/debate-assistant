@@ -345,7 +345,7 @@ export default function App() {
 
   return <div className="shell">
     <aside className="sidebar">
-      <div className="brand"><div className="brand-icon"><Gavel size={19} /></div><div><b>DEBATE</b><small>INTELLIGENCE</small></div></div>
+      <div className="brand"><div className="brand-icon"><Gavel size={19} /></div><div><b>DEBATE</b><small>ASSISTANT</small></div></div>
       <div className="nav-label">WORKSPACE</div>
       <button className={tab === 'live' ? 'nav active' : 'nav'} onClick={() => setTab('live')}><Radio size={17} /> Live debate</button>
       <button className={tab === 'research' ? 'nav active' : 'nav'} onClick={() => setTab('research')}><BookOpen size={17} /> Preparation</button>
@@ -353,7 +353,7 @@ export default function App() {
       <button className={tab === 'history' ? 'nav active' : 'nav'} onClick={() => setTab('history')}><History size={17} /> Debate history</button>
       <div className="nav-label recent">RECENT DEBATES</div>
       {debates.slice(0, 8).map(debate => <button key={debate.id} className="debate-link" onClick={() => select(debate)}>{debate.title}</button>)}
-      <div className="sidebar-bottom"><span className="dot" /> API workspace <small>Stage 5 · Live intelligence</small></div>
+      <div className="sidebar-bottom"><span className="dot" /> API workspace <small>v0.5 · Live intelligence</small></div>
     </aside>
 
     <main className="main">

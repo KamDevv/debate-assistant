@@ -118,8 +118,8 @@ In another terminal:
 
 ```bash
 cd frontend
-npm install
-npm run dev
+npm.cmd install
+npm.cmd run dev
 ```
 
 Open `http://localhost:5173`.
